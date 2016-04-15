@@ -15,7 +15,7 @@ public class AutoBal extends JPanel implements ActionListener
 
 	public AutoBal()
 	{
-		javax.swing.Timer autoKlik = new javax.swing.Timer(WACHTTIJD,this);
+		Timer autoKlik = new javax.swing.Timer(WACHTTIJD,this);
 		autoKlik.start();
 	}
 	

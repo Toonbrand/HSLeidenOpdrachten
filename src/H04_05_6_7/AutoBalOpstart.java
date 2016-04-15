@@ -12,20 +12,21 @@ public class AutoBalOpstart extends JFrame
 		venster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		venster.setTitle("Automatische bal");
 		venster.setLocation(100,100);
-		
+
 		AutoBal bal;
 		bal = new AutoBal();
 		venster.add(bal, BorderLayout.CENTER);
-		
+
 		AutoBalBediening bedieningspaneel;
 		bedieningspaneel = new AutoBalBediening(bal);
 		venster.add(bedieningspaneel, BorderLayout.SOUTH);
-		
+//asdfasdf
 		venster.setVisible(true);
 	}
-	
-	public static void main(String[]args)
+
+	public static void main(String args[])
 	{
+		System.out.println(args.length);
 		new AutoBalOpstart();
 	}
 }
